@@ -1,0 +1,31 @@
+.footer{
+
+     margin-top: 100%;
+}
+
+
+  .s {
+   
+    width: 140px;
+    height: 40px;
+    border: 1.5px solid rgb(12, 7, 7);
+    font-size: 20px;
+    margin-left: 25%;
+    margin-top: 5%;
+    cursor: pointer;
+   
+
+  
+  }
+
+  .s {
+    border-color: #000000;
+    color: #3609c0
+  }
+  
+  .s:hover {
+    background: #5355d6;
+    color: #ffffff;
+  }
+
+
