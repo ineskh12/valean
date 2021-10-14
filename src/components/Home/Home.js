@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Footer from './../Footer/Footer';
 import { isAuth } from './../../helpers/auth';
 import axios from 'axios'
-import Main from './Voice';
+
 import logo from './acc.jpg';
 import vl from './vl.png';
 import ines from './all precomp.mp4';
@@ -24,9 +24,9 @@ const Home = ({ history }) => {
 
         const speech = new SpeechSynthesisUtterance();
 
-        speech.text =
-            "welcome to Vallean";
-        window.speechSynthesis.speak(speech);
+        //speech.text =
+          //  "welcome ines";
+       // window.speechSynthesis.speak(speech);
 
 
         console.log(isAuth());
@@ -58,7 +58,7 @@ const Home = ({ history }) => {
         <>
 
             <div className="banner">
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo" width="100%"  height="100%"/>
                 
 
 
@@ -160,7 +160,7 @@ const Home = ({ history }) => {
 
             <div className="service">
                 <div className="container">
-                <video width="100%"  autoPlay loop muted  >
+                <video width="100%"  controls autoPlay loop muted  >
       <source   src={ali} type="video/mp4"/>
      </video>
                     <div className="section-header text-center wow zoomIn" data-wow-delay="0.1s">
@@ -297,7 +297,7 @@ const Home = ({ history }) => {
                                
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
                             <div class="team-item">
                                 <div class="team-img">
                                     <img   width="200px"  height="300px"src="https://res.cloudinary.com/orange112/image/upload/v1633073990/test/m_zpfzbd.jpg" alt="Image" />
@@ -327,7 +327,7 @@ const Home = ({ history }) => {
                                 </div>
                                 <div class="team-text">
                                     <h2>Bouthaina diari</h2>
-                                    <p>Machine learning developer</p>
+                                    <p>Machine learning engineer</p>
                                 </div>
                             </div>
                         </div>
