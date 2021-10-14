@@ -81,10 +81,7 @@ const Home = ({ history }) => {
                 </section> */}
                 <h2 className="c" >Chasseur de plastiques ! </h2>
 
-                <button className='b' onClick={() => {
-                    !isAuth() ? history.push('/Login') :
-                        NotificationManager.info(`${isAuth().name} is authenticated you can reserved now`)
-                }} > <i class="fas fa-play"></i>  &nbsp; &nbsp; Play</button> 
+                <button className='b' onClick={() => {window.location.href='https://www.youtube.com/watch?v=4ibZw3nCvTc&ab_channel=zeinebsahli'}} > <i class="fas fa-play"></i>  &nbsp; &nbsp; Play</button> 
 
                 <NotificationContainer />
 
